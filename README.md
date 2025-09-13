@@ -1,14 +1,4 @@
-# AI Assistant Server - Ünlü Kişilerle Sohbet
 
-Bu proje, kullanıcıların ünlü kişilerle (Atatürk, Newton, Fatih Sultan Mehmet, Einstein, Leonardo da Vinci) sohbet edebilmesini sağlayan bir API sunucusudur.
-
-## Özellikler
-
-- ✅ Google OAuth ile giriş
-- ✅ Ünlü kişi seçimi (Atatürk, Newton, Fatih Sultan Mehmet, Einstein, Leonardo da Vinci)
-- ✅ Seçilen ünlü kişiye göre ChatGPT manipülasyonu
-- ✅ Kullanıcıların kendi OpenAI API anahtarlarını kullanması (maliyet tasarrufu)
-- ✅ Gerçek zamanlı sohbet
 
 ## Kurulum
 
@@ -116,19 +106,7 @@ POST /api/chat
 GET /api/health
 ```
 
-## Kullanım Akışı
 
-1. **Google ile giriş yapın** - Google OAuth token alın
-2. **OpenAI API anahtarınızı kaydedin** - `/api/save-token` endpoint'ini kullanın
-3. **Ünlü kişi listesini alın** - `/api/famous-people` endpoint'ini kullanın
-4. **Ünlü kişi seçin** - İstediğiniz ünlü kişinin ID'sini kullanın
-5. **Sohbet edin** - `/api/chat` endpoint'ini kullanarak seçtiğiniz ünlü kişiyle konuşun
-
-## Güvenlik
-
-- Kullanıcıların OpenAI API anahtarları sunucuda geçici olarak saklanır
-- Google OAuth ile kimlik doğrulama yapılır
-- API anahtarları test edilir ve geçerli olduğu doğrulanır
 
 ## Notlar
 
